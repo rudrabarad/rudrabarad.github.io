@@ -189,8 +189,8 @@ Name Tag
     background: rgb(0, 0, 0);
 }
 .nav-item{
-    color: rgb(172, 172, 172);
+    color: rgb(116, 116, 116);
     padding-top: 0px;
-    padding-left: 10rem;
-
+    font-weight: 500;
+    opacity: .8;
 }
