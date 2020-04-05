@@ -158,11 +158,6 @@ a:hover{
 
 
 
-
-
-
-
-
 /*
 
 .img{
@@ -187,3 +182,15 @@ Name Tag
 
 */
 
+.bottom-navbar{
+    font-family: 'Montserrat', sans-serif;
+    height: 8%;
+    font-size: 1.2rem;
+    background: rgb(0, 0, 0);
+}
+.nav-item{
+    color: rgb(172, 172, 172);
+    padding-top: 0px;
+    padding-left: 10rem;
+
+}
