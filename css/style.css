@@ -8,22 +8,25 @@ body{
 }
 /* Logo */
 .logo{
-    margin: 1rem;
+    margin-left: 0%;
+    margin-top: -4px;
     height: 5rem;
     width: 3rem;
 }
 
 .navbar{
- background-color: #010;
+ background-color: rgb(0, 0, 0);
  height: 10%;
 }
 
 /* Hamburger */
 .hamburger{
+    margin-top: 8px;
+    right: 0px;
     margin-right: 1rem;
     width: 55px;
     height:55px;
-    position: relative;
+    position: fixed;
     cursor: pointer;
     background: transparent;
 }
@@ -107,7 +110,8 @@ body{
     height: 400px;
 }
 .site-main .site-banner .banner-img > img{
-    
+    max-width: 100%;
+    height: auto;   
 }
 
 /* End Banner Area */
