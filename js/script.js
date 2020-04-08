@@ -1,3 +1,4 @@
+/*
 // ===================================== FOR SLIDE EFFECT ==================================//
 // Click Function for Hamburger
 $(document).ready(function()
@@ -17,9 +18,9 @@ $(document).ready(function()
     });
 
 });
-
+*/
 // ===================================== FOR FADE EFFECT ==================================//
-/*
+
 // Click Function for Hamburger
 $(document).ready(function()
 {
@@ -38,4 +39,3 @@ $(document).ready(function()
     });
 
 });
-*/
