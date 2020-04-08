@@ -1,36 +1,170 @@
 /* Import Fonts from fonts.css */
 @import url(./fonts.css);
 
+html{
+    scroll-behavior: smooth; /* For Smooth Scrolling Behaviour */
+}
+
+/* ====================== GLOBAL CLASSES =====================*/
+
+
+.primary-button{
+    margin-top: .8rem;
+    padding: .8rem 1.5rem;
+    font:normal 500 20px/15px 'Montserrat', sans-serif;
+    position: relative;
+    cursor: pointer;
+    background:whitesmoke;
+    opacity: .9;
+    background-clip: padding-box;
+    color: rgb(17,17,17) ;
+    box-shadow: 5px 10px 30px rgb(31, 30, 30);
+    overflow:hidden;
+}
+
+
+.primary-button:hover{
+    background-color: rgb(17,17,17);
+    background-clip: padding-box;
+    color: #00b7ff;
+    transition: 1s ease;
+    box-shadow: none;
+    
+}
+
+.primary-button::before{
+    content: "";
+    position: absolute;
+    left:0px;
+    width: 100%;
+    height: 0%;
+    background: whitesmoke;
+    z-index: -1;
+    transition: all .8s ease;
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+    height: 180%;
+}
+
+.primary-button:hover::before{
+    height: 0%;
+    border: 1px solid #00b7ff;
+
+}
+
+.secondary-button{
+    margin-top: .8rem;
+    padding: .8rem .5rem;
+    font:normal 500 20px/15px 'Montserrat', sans-serif;
+    position: relative;
+    cursor: pointer;
+    background: rgb(17,17,17);
+    opacity: .9;
+    background-clip: padding-box;
+    color: #00b7ff;
+    opacity: .8;
+    overflow:hidden;
+    border-radius: 0;
+    border-bottom: 1px solid #00b7ff;
+}
+
+
+.secondary-button:hover{
+    background-color: whitesmoke;
+    background-clip: padding-box;
+    color: rgb(17,17,17);
+    transition: 1s ease;
+    box-shadow: none;
+    box-shadow: 5px 10px 30px rgb(31, 30, 30);
+    border: none;
+    border-radius: 2px;
+}
+
+.secondary-button::before{
+    content: "";
+    position: absolute;
+    left:0px;
+    width: 100%;
+    height: 0%;
+    background: rgb(17,17,17);
+    z-index: -1;
+    transition: all .8s ease;
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+    height: 180%;
+}
+
+.secondary-button:hover::before{
+    height: 0%;
+}
+
+p.para{
+    color: rgb(163, 163, 163);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+/* ----------------------------------------------------------- */
+
+/* ===================Body================= */
 body{
     margin: 0px;
     padding: 0px;
-    background-color: #000;
+    background-color: rgb(17,17,17);
+    opacity: .9;
 }
-/* Logo */
+/* ==============Logo============ */
 .logo{
-    margin-left: 0%;
+    margin-left: 4px;
     margin-top: -4px;
     height: 5rem;
     width: 3rem;
+    z-index: 3;
 }
 
+/* ---------------- Top Navigation Bar ----------------*/
 .navbar{
- background-color: rgb(0, 0, 0);
+ background-color: rgb(17,17,17);
  height: 10%;
 }
 
-/* Hamburger */
+/* -==================== Start Bottom Navigation Bar================= */
+.bottom-navbar{
+    font-family: 'Montserrat', sans-serif;
+    height: 8%;
+    font-size: 1.3rem;
+    background: rgb(17,17,17);
+
+}
+.nav-item{
+    color: rgb(116, 116, 116);
+    padding-top: 0px;
+    font-weight: 500;
+    opacity: .8;
+}
+
+.nav-item:hover{
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+    transition: all .5s ease;
+}
+/* -----------------------End Bottom Navigation Bar----------------- */
+
+
+/* ----------------Hamburger ------------*/
 .hamburger{
     margin-top: 8px;
     right: 0px;
-    margin-right: 1rem;
+    margin-right: 1.5rem;
     width: 55px;
     height:55px;
     position: fixed;
     cursor: pointer;
     background: transparent;
+    z-index: 3;
 }
-/* Sandwich */
+/* ----------------Sandwich --------------*/
 .hamburger div{
     width: 35px;
     height: 5px;
@@ -39,7 +173,7 @@ body{
     position: absolute;
     transition: all 1s ease;
 }
-/* Layers Of Sandwich */
+/* ===========================Layers Of Sandwich ==================*/
 .hamburger .first{
     top:10px;
     left:10px;
@@ -52,7 +186,7 @@ body{
     top:40px;
     left:10px;
 }
-/* Cross After Clicking on Hamburger */
+/* ---------------Cross After Clicking on Hamburger-------------- */
 .hamburger.active .first{
     transform: translate(0px, 20px) rotate(45deg);
     transition: all 1s ease;
@@ -64,6 +198,7 @@ body{
 
 }
 .hamburger.active .third{
+    /*transform: translate(13.9px, -12px) rotate(90deg);*/
     opacity: 0;
     transition: all 0.2s ease;
 
@@ -74,7 +209,8 @@ body{
     transition: all 1s ease;
 }
 
-/* Start Banner Area */
+
+/* ================================Start Banner Area ==========================*/
 
 .site-main .site-banner .site-title h3{
     padding-top: 30%;
@@ -84,6 +220,7 @@ body{
     opacity: .8;
     margin-left: 5px;
 }
+/*
 .site-main .site-banner .site-title h3::after{
     content: "";
     height: 3px;
@@ -94,19 +231,21 @@ body{
     margin-left: 5%;
     transform: translateY(-12px);
 }
+\*/
 .site-main .site-banner .site-title h1{
     font-size: 6.5rem;
     color: rgb(255, 255, 255);
-    opacity: ;
+    opacity: 9;
 }
 .site-main .site-banner .site-title h4{
     font-size: 2rem;
-    color: rgb(255, 255, 255);
-    opacity: .8;
+    font-weight: 300;
+    color: #ffffff;
+    opacity: .7;
     margin-left: 5px;
 }
 .site-main .site-banner .banner-img{
-    margin-top: 8rem;
+    margin-top: 12.2rem;
     height: 400px;
 }
 .site-main .site-banner .banner-img > img{
@@ -114,25 +253,105 @@ body{
     height: auto;   
 }
 
-/* End Banner Area */
+/* --------------------------------End Banner Area----------------------- */
 
-.bottom-navbar{
-    font-family: 'Montserrat', sans-serif;
-    height: 8%;
-    font-size: 1.2rem;
-    background: rgb(0, 0, 0);
+
+
+/*================================ Start About Me ========================*/
+
+.site-main .about-area{
+    padding:2rem 0rem;
 }
-.nav-item{
-    color: rgb(116, 116, 116);
-    padding-top: 0px;
+
+.about-img{
+    padding-top: 7vw;
+    left: 0;
+}
+.about-title{
+    padding-top: 6vw;
+    padding-left: 2vw;
+}
+.site-main .about-area .about-title h2 > span,.contact-title h2{
+    display: block;
     font-weight: 500;
+    font-size: 2.5rem;
+    color: white;
     opacity: .8;
-    transition: all .2s ease;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing:.2rem;
+}
+/*-------------------------------- End About Me ------------------------*/
+
+/*================================ Start Contact =========================*/
+
+.contact-area{
+    padding:3rem 0rem;
 }
 
-.nav-item:hover{
-    color: rgb(255, 255, 255);
-    font-size: 1.3rem;
-    transition: all .2s ease;
-
+.contact-img{
+    padding: 5.5vw 0vw;
+    left: 0;
 }
+.contact-title{
+    padding-top: 6vw;
+    padding-left: 2vw;
+}
+
+.crazy-face{
+    color: whitesmoke;
+    opacity: .7;
+    font-size: 22px;
+    padding-left: 7px;
+}
+
+.social-buttons a{
+    display: inline-flex;
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 2rem;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    opacity: .9;
+    color: rgb(17,17,17);
+}
+
+.social-buttons a::before{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    opacity: .9;
+    border-radius: 50%;
+    z-index: -1;
+    transition: all .3s ease-in;
+}
+
+.social-buttons a:hover::before{
+    transform:scale(0);
+    background-color: #00b7ff;
+}
+.social-buttons a i{
+    transition: all 0.5s ease-in;
+}
+.social-buttons a:hover i{
+    color: #00b7ff;
+    transform: scale(1.5);
+    transition: all 1s ease;
+    opacity: .9;
+}
+
+/*-------------------------------- End Contact ---------------------------*/
+
+
+
+/*  FONT
+/*  font-family: 'Montserrat', sans-serif;
+/*
+/*
+/*
+/*  
+/* 

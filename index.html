@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RUDRA BARAD</title>
+    <!-- Title Icon -->
     <link rel="icon" type="imag/png" href="./img/favicon.png">
 
     <!-- Importing Google Fonts -->
@@ -16,44 +17,70 @@
     <link rel="stylesheet" href="./css/all.min.css">
     <!-- Custom CSS File -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/overlay.css">
 </head>
+
 <body>
-    <!-- ================ Start Fixed Navigation Bar =================== -->
+    <!-- ================ Start Fixed Top Navigation Bar =================== -->
     <nav class="navbar fixed-top navbar-light">
-        <a class="navbar-brand" href="#"><img class="logo" src="./img/logo.png" alt=""></a>
+        <a class="navbar-brand" href="#"><img class="logo" src="./img/logo.png" alt="" href="#home"></a>
             <!--  ========== Hamburger ==========  -->
             <div class="hamburger">
                 <div class="first"></div>
                 <div class="second"></div>
                 <div class="third"></div>
             </div>
-      </nav>
-    <!-- ================ End Fixed Navigation Bar =================== -->
 
-    
+                <div class="overlay">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#home" data-text="HOME">HOME</a></li>
+                            <li><a href="#about" data-text="ABOUT">ABOUT</a></li>
+                            <li><a href="#" data-text="PROJECTS">PROJECTS</a></li>
+                            <li><a href="#contact" data-text="CONTACT">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            
+
+      </nav>
+    <!-- ================ End Fixed Top Navigation Bar =================== -->
+
+    <!-- ================ Start Fixed Bottom Navigation Bar =================== -->
+
+    <nav class="navbar fixed-bottom navbar-expand bottom-navbar col-md-12 col-sm-12 col-lg-12">
+        <div class="container">
+         <a class="nav-item nav-link active text-uppercase" href="#home">Home</a>
+         <a class="nav-item nav-link text-uppercase" href="#about">About</a>
+         <a class="nav-item nav-link text-uppercase" href="#">Projects</a>
+         <a class="nav-item nav-link text-uppercase" href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- ================ End Fixed Bottom Navigation Bar =================== -->
 
     <!-- ====================== Start Main Area ==================== -->
 
-    <main class="site-main">
+    <main id="home" class="site-main">
 
         <!-- =========== Start Banner Area ======== -->
 
         <section class="site-banner">
             <div class="container">
                 <div class="row">
+                    <div class="col-lg-5 col-md-12 banner-img">
+                        <img src="./img/3.svg" alt="banner-img" class="img-fluid responsive">
+                    </div>
                     <div class="col-lg-7 col-md-12 site-title">
-                        <h3 class="title-text">Hey !</h3>
-                        <h1 class="title-text text-uppercase">I Am Rudra</h1>
-                        <h4 class="title-text text-uppercase">Undergraduate Student</h4>
+                        <h3>HEY !</h3>
+                        <h1>I AM <font color="00b7ff">R</font>UDRA</h1>
+                        <h4>Undergraduate Student</h4>
                         <div class="site-buttons">
                             <div class="d-flex flex-row flex-wrap">
-                                <button type="button" class="btn button primary-button mr-4">Hire Me</button>
-                                <button type="button" class="btn button secondary-button">Resume</button>
+                                <button type="button" class="btn primary-button mr-4">HIRE ME</button>
+                                <a href="./pdf/Rudra Barad.pdf" target="_blank" class="btn primary-button">RESUME</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-5 col-md-12 banner-img">
-                        <img src="./img/banner.png" alt="banner-img" class="img-fluid responsive">
                     </div>
                 </div>  
             </div>
@@ -61,20 +88,83 @@
 
         <!-- =========== End Banner Area ======== -->        
 
+        <!-- =========== Start About Area ======== --> 
+        
+        <section id="about" class="about-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-5 col-md-12 try">
+                        <div class="about-img">
+                            <img src="./img/Profile.svg" alt="About-me" width="100%" height="auto">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 about-title">
+                        <h2>
+                            <span>LET ME</span>
+                            <span>INTRODUCE MYSELF</span>
+                        </h2>
+                        <div class="paragraph py-4 w-75">
+                            <p class="para">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi quia laboriosam iusto voluptate corporis non odio id eaque architecto voluptatibus?
+                            </p>
+                            <p class="para">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore iure doloribus quo nesciunt adipisci eius molestias atque reiciendis vero asperiores expedita, excepturi est? Assumenda, voluptatem ratione eius optio eos tenetur!
+                            </p>
+                        </div>
+                        <a href="./pdf/Rudra Barad.pdf" download="RUDRA'S RESUME" class="btn secondary-button"><i class="fas fa-download"></i> GET RESUME</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- =========== End About Area ======== -->   
+        
+        
+        <!-- =========== Start Contact Area ======== --> 
+        
+        <section id="contact" class="contact-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-5 col-md-12 try">
+                        <div class="contact-img">
+                            <img src="./img/undraw_social_sharing_ibwq.svg" alt="Contact-Me" width="100%" height="auto">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 contact-title">
+                        <h2>
+                            <span>LET'S SOCIALIZE</span>
+                        </h2>
+                        <div class="paragraph py-4 w-75">
+                            <p class="para">
+                                Feel free to call anytime if you don't need anything<i class="fas fa-grin-tongue-wink crazy-face"></i>
+                                <br>In case you want to send any mail, my inbox is always Open !
+                            </p>
+                            <p class="para">
+                                Being Active on Social Media you can DM me there too...
+                            </p>
+                            <div class="social-buttons pt-5">
+                                <a href="https://www.instagram.com/rudra.barad/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/rudra-barad/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://github.com/rudrabarad" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://www.behance.net/rudrabarad" target="_blank"><i class="fab fa-behance"></i></a>
+                                <a href="https://twitter.com/rudraabarad" target="_blank"><i class="fab fa-twitter"></i></a> 
+    
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- =========== End Contact Area ======== -->   
+
+
+
     </main>
     <!-- ====================== End Main Area ==================== -->
-
-
-
-    <nav class="navbar fixed-bottom navbar-expand bottom-navbar col-md-12 col-sm-12 col-lg-12">
-        <div class="container">
-         <a class="nav-item nav-link active" href="#">Home</a>
-         <a class="nav-item nav-link" href="#">About Us</a>
-         <a class="nav-item nav-link" href="#">Skill</a>
-         <a class="nav-item nav-link" href="#">Projects</a>
-         <a class="nav-item nav-link" href="#">Contact</a>
-        </div>
-    </nav>
 
 
 
@@ -94,10 +184,7 @@
 
 <!-- ICONS -->
 <!--
-    <i class="fab fa-linkedin"></i>
-    <i class="fab fa-github"></i>
-    <i class="fab fa-behance-square"></i>
-    <i class="fab fa-instagram"></i>
+    
     <i class="fas fa-at"></i>
     <i class="fas fa-heart"></i>
     <i class="fas fa-phone-square-alt"></i>
@@ -109,10 +196,21 @@
     <i class="fas fa-tools fa-2x"></i>
     <i class="fas fa-laptop-code fa-2x"></i>
     <i class="fas fa-id-badge fa-2x"></i>
+
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-linkedin-in"></i>
+    <i class="fab fa-github"></i>
+    <i class="fab fa-behance"></i>
+    <i class="fab fa-twitter"></i>
 -->
 
 <!-- Colours -->
 <!--
     Black   #121212
+            #000
+    White   rgb(255,255,255)
+            #fff
     Blue    #0008ff
+            #00b7ff
+
 -->

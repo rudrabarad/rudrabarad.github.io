@@ -1,0 +1,88 @@
+/* Import Fonts from fonts.css */
+@import url(./fonts.css);
+
+
+.overlay{
+    margin: 0rem;
+    padding: 0;
+    box-sizing: border-box;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(17,17,17);
+    z-index: 2;
+    transition: 0s ease;  
+    display: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    letter-spacing: .3rem;
+}
+
+.menu ul{
+    position: relative;
+}
+
+.menu ul li{
+    text-align: center;
+    list-style: none;
+}
+
+.menu ul li a{
+    color: white;
+    opacity: .9;
+    text-decoration: none;
+    font-size: 3rem;
+    display: inline-flex;
+    padding: 5px 20px;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+
+.menu ul:hover li a{
+    color: whitesmoke;
+    opacity: .3;
+}
+
+.menu ul li:hover a{
+    color: white;
+    opacity: 1;
+}
+
+.menu ul li a:before{
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    display: flex;
+    transform: translate(-51%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5.4em;
+    color: rgba(255, 255, 255, 0.07);
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0;
+    font-weight: 750;
+    letter-spacing: 500px;
+    transition: letter-spacing 0.5s,left 0.5s;
+}
+
+.menu ul li a:hover:before{
+    content: attr(data-text);
+    opacity: 1;
+    left: 55%;
+    letter-spacing: 10px;
+    width: 1800px;
+    height: 1800px;
+}
+
