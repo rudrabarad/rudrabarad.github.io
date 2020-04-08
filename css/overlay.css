@@ -22,7 +22,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 125vh;
     overflow: hidden;
     letter-spacing: .3rem;
 }
@@ -63,7 +63,7 @@
     top: 50%;
     left: 20%;
     display: flex;
-    transform: translate(-51%,-50%);
+    transform: translate(-51%,-55%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,3 +86,10 @@
     height: 1800px;
 }
 
+.strip{
+    margin-top: 5rem;
+    height: 3px;
+    width: 100px;
+    background-color: whitesmoke;
+    color: whitesmoke;
+}

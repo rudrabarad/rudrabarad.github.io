@@ -1,4 +1,4 @@
-/*
+
 // ===================================== FOR SLIDE EFFECT ==================================//
 // Click Function for Hamburger
 $(document).ready(function()
@@ -18,9 +18,9 @@ $(document).ready(function()
     });
 
 });
-*/
-// ===================================== FOR FADE EFFECT ==================================//
 
+// ===================================== FOR FADE EFFECT ==================================//
+/*
 // Click Function for Hamburger
 $(document).ready(function()
 {
@@ -36,6 +36,33 @@ $(document).ready(function()
         $('.overlay').fadeToggle(400);
         $('.bottom-navbar').fadeToggle(800);
         $('.hamburger').toggleClass('active');        
+    });
+
+});
+*/
+
+$(document).ready(function()
+{
+
+    $(window).scroll(function(){
+        if($(this).scrollTop()<50){
+            $('.mouse-scroll').fadeIn(500);
+        } else {
+            $('.mouse-scroll').fadeOut(500);
+        }
+    });
+
+    $(window).scroll(function(){
+        if($(this).scrollTop()>80){
+            $('.top-button').fadeIn(2000);
+        } else {
+            $('.top-button').fadeOut(800);
+        }
+    });
+
+    $('.top-button').click(function()
+    {
+        $('html, body').animate({scrollTop:0},21);
     });
 
 });

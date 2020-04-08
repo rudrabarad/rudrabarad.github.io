@@ -135,8 +135,8 @@ body{
     height: 8%;
     font-size: 1.3rem;
     background: rgb(17,17,17);
-
 }
+
 .nav-item{
     color: rgb(116, 116, 116);
     padding-top: 0px;
@@ -146,7 +146,7 @@ body{
 
 .nav-item:hover{
     color: rgb(255, 255, 255);
-    font-size: 1.4rem;
+    transform: scale(1.1);
     transition: all .5s ease;
 }
 /* -----------------------End Bottom Navigation Bar----------------- */
@@ -190,23 +190,24 @@ body{
 .hamburger.active .first{
     transform: translate(0px, 20px) rotate(45deg);
     transition: all 1s ease;
-
+    background-color: #00b7ff;
 }
 .hamburger.active .second{
     transform: translate(0px, 0px) rotate(135deg);
     transition: all 1s ease;
-
+    background-color: #00b7ff;
 }
 .hamburger.active .third{
     /*transform: translate(13.9px, -12px) rotate(90deg);*/
     opacity: 0;
     transition: all 0.2s ease;
-
+    background-color: #00b7ff;
 }
 .hamburger.active{
     border-radius:50%;
     transform: rotate(360deg);
     transition: all 1s ease;
+    
 }
 
 
@@ -346,7 +347,78 @@ body{
 
 /*-------------------------------- End Contact ---------------------------*/
 
-/* =========== Start Footer =========== */
+/* ======================== Start Footer ========================== */
+
+/* Start Mouse Scroll Effect */
+
+.mouse-scroll{
+    position: fixed;
+    bottom: 60px;
+    left: 48%;;
+    width: 26px;
+    height: 39px;
+    border: 1.9px solid rgb(233, 233, 233);
+    opacity: .8;
+    opacity: .7 ;
+    border-radius: 50px;
+}
+
+.mouse-scroll:after{
+    position: absolute;
+    top: 6px;
+    width: 2px;
+    height:7px;
+    content: " ";
+    background-color: rgba(255, 255, 255, 0.842);
+    opacity: .8;
+    transform: translateX(-50%);
+    left: 51%;
+    border-radius: 10px;
+    animation: mouse 2.5s infinite;
+    transition: all 2s ease;
+}
+
+@keyframes mouse{
+    0% {
+        opacity: 1;
+        top: 6px;
+    }
+    100% {
+        opacity: 0;
+        top: 15px;
+    }
+}
+
+
+/* End Mouse Scroll Effect */
+
+/* ------ Start Top Button ----- */
+
+.top-button{
+    position: fixed;
+    bottom: 60px;
+    right: 25px;
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    opacity: .8;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 3;
+    display: none;
+}
+
+.top-button:hover{
+    background-color: rgb(17,17,17);
+    color: #00b7ff;
+    transform: scale(1.3);
+    opacity: .9;
+    transition: .8s ease;
+}
+
+/* ------ End Top Button ----- */
 
 .heart{
     color: #00b7ff;
@@ -369,10 +441,11 @@ body{
 
 .footer-area a:hover{
     color: #00b7ff;
-    font-weight: 400;
+    font-weight:400;
+    transform: scale(2);
 }
 
-/* =========== End Footer ============ */
+/* ======================== End Footer ========================= */
 
 
 /*  FONT
