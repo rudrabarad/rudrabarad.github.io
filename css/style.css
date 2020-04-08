@@ -11,7 +11,7 @@ html{
 .primary-button{
     margin-top: .8rem;
     padding: .8rem 1.5rem;
-    font:normal 500 20px/15px 'Montserrat', sans-serif;
+    font:normal 510 20px/15px 'Montserrat', sans-serif;
     position: relative;
     cursor: pointer;
     background:whitesmoke;
@@ -55,7 +55,7 @@ html{
 .secondary-button{
     margin-top: .8rem;
     padding: .8rem .5rem;
-    font:normal 500 20px/15px 'Montserrat', sans-serif;
+    font:normal 510 20px/15px 'Montserrat', sans-serif;
     position: relative;
     cursor: pointer;
     background: rgb(17,17,17);
@@ -346,6 +346,33 @@ body{
 
 /*-------------------------------- End Contact ---------------------------*/
 
+/* =========== Start Footer =========== */
+
+.heart{
+    color: #00b7ff;
+    opacity: .8;
+}
+.footer-area{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:  white;
+}
+.footer-area,.footer-area a{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    text-decoration: none;
+    opacity: .9;
+}
+
+.footer-area a:hover{
+    color: #00b7ff;
+    font-weight: 400;
+}
+
+/* =========== End Footer ============ */
 
 
 /*  FONT
