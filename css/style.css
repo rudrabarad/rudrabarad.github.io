@@ -263,7 +263,8 @@ body{
 /*================================ Start About Me ========================*/
 
 .site-main .about-area{
-    padding:2rem 0rem;
+    padding-top: 2rem;
+    padding-bottom: 7rem;
 }
 
 .about-img{
@@ -274,7 +275,7 @@ body{
     padding-top: 6vw;
     padding-left: 2vw;
 }
-.site-main .about-area .about-title h2 > span,.contact-title h2{
+.site-main .about-area .about-title h2 > span, .contact-title h2, .project-title h2{
     display: block;
     font-weight: 500;
     font-size: 2.5rem;
@@ -284,6 +285,22 @@ body{
     letter-spacing:.2rem;
 }
 /*-------------------------------- End About Me ------------------------*/
+
+/* ============================= Start Project Area =========================== */
+
+.site-main .projects-area{
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+    text-align: center;
+}
+
+.project-image{
+    padding-top: 3rem;
+    opacity: 0.1 ;
+}
+
+
+/* ---------------------------- End Project Area ------------------------------- */
 
 /*================================ Start Contact =========================*/
 
