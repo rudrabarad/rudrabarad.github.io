@@ -303,11 +303,12 @@ body{
 /*================================ Start Contact =========================*/
 
 .contact-area{
-    padding:3rem 0rem;
+    padding-top: 3rem;
 }
 
 .contact-img{
-    padding: 5.5vw 0vw;
+    padding-top: 5.5vw;
+    padding-bottom: 5vw;
     left: 0;
 }
 .contact-title{
