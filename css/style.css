@@ -135,12 +135,10 @@ body{
     height: 8%;
     font-size: 1.3rem;
     background: rgb(17,17,17);
-    letter-spacing: 1.1px;
 }
 
 .nav-item{
     color: rgb(116, 116, 116);
-    padding: 0rem 5rem;
     font-weight: 500;
     opacity: .8;
 }
