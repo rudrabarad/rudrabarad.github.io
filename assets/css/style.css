@@ -604,11 +604,11 @@ section {
 
 # Devloper Portfolio
 --------------------------------------------------------------*/
-.dev-portfolio .portfolio-item {
+.dev-portfolio .dev-portfolio-item {
   margin-bottom: 30px;
 }
 
-.dev-portfolio #portfolio-flters {
+.dev-portfolio #dev-portfolio-flters {
   padding: 0;
   margin: 0 auto 25px auto;
   list-style: none;
@@ -618,7 +618,7 @@ section {
   padding: 2px 15px;
 }
 
-.dev-portfolio #portfolio-flters li {
+.dev-portfolio #dev-portfolio-flters li {
   cursor: pointer;
   display: inline-block;
   padding: 10px 15px;
@@ -631,11 +631,11 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.dev-portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+.dev-portfolio #dev-portfolio-flters li:hover, .portfolio #dev-portfolio-flters li.filter-active {
   color: #0563bb;
 }
 
-.dev-portfolio #portfolio-flters li:last-child {
+.dev-portfolio #dev-portfolio-flters li:last-child {
   margin-right: 0;
 }
 
@@ -660,12 +660,32 @@ section {
 }
 
 .p-badge {
+  font-size: 13px;
   background: #0270d8;
   border: 0;
-  padding: .5px 6px;
+  padding:  1px 7px 4px 7px;
   color: #fff;
   transition: 0.4s;
   border-radius: 4px;
+}
+
+.p-github {
+  font-size: 14px;
+  vertical-align: middle;
+  background: #31373d;
+  border: 0;
+  margin-top: 15px;
+  padding:  2px 7px 3px 7px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.p-github:hover {
+
+  background: #fff;
+  color: #31373d;
+
 }
 
 /*--------------------------------------------------------------
