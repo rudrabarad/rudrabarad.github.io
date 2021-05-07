@@ -338,6 +338,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
+
 section {
   padding: 60px 0;
   overflow: hidden;
@@ -599,6 +600,76 @@ section {
 }
 
 /*--------------------------------------------------------------
+
+
+# Devloper Portfolio
+--------------------------------------------------------------*/
+.dev-portfolio .portfolio-item {
+  margin-bottom: 30px;
+}
+
+.dev-portfolio #portfolio-flters {
+  padding: 0;
+  margin: 0 auto 25px auto;
+  list-style: none;
+  text-align: center;
+  background: #fff;
+  border-radius: 50px;
+  padding: 2px 15px;
+}
+
+.dev-portfolio #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #272829;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.dev-portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+  color: #0563bb;
+}
+
+.dev-portfolio #portfolio-flters li:last-child {
+  margin-right: 0;
+}
+
+.dev-portfolio .portfolio-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.8);
+  filter: gray; /* IE5+ */
+  -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+  -webkit-transition: all .8s ease-in-out; 
+}
+
+.dev-portfolio .portfolio-wrap:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+
+.p-body {
+  padding: 5px;
+}
+
+.p-badge {
+  background: #0270d8;
+  border: 0;
+  padding: .5px 6px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+/*--------------------------------------------------------------
+
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
@@ -641,7 +712,7 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  background: rgba(69, 80, 91, 0.8);
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .portfolio .portfolio-wrap::before {
