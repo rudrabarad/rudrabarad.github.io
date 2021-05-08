@@ -14,23 +14,25 @@ body {
 }
 
 .more{
-  text-align: center;
+  float: right;
   font-size:22px;
-  font-weight: 500;
-  padding-top: 5px;
-  padding-bottom: 10px;
-  line-height: 20px; 
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #0563bb;
 }
 
 .more:hover{
   animation-name: vibrate;
-  animation-duration:0.7s;        
-  animation-iteration-count: infinite;  transition: .5s;
+  animation-duration:0.7s;   
+  animation-iteration-count: infinite;     
+  transition: .8s;
+  cursor: pointer;
 }
 
 .more img{
-  padding-bottom: 3px;
-  padding-left: 2px;
+  padding-left: 5px;
+  padding-bottom: 2px;
 }
 
 .custom-btn {
@@ -73,7 +75,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -84,24 +86,16 @@ h1, h2, h3, h4, h5, h6 {
   visibility: hidden;
   opacity: 0;
   right: 15px;
-  bottom: 15px;
+  bottom: 20px;
   z-index: 996;
-  background: #0563bb;
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  transition: all 0.4s;
+  transition: all 1.2s;
 }
 
-.back-to-top i {
-  font-size: 28px;
-  color: #fff;
-  line-height: 0;
-}
 
 .back-to-top:hover {
-  background: #0678e3;
-  color: #fff;
+  animation-name: up-down;
+  animation-duration:1.2s;        
+  transition: 1s all ease-in-out;
 }
 
 .back-to-top.active {
@@ -134,8 +128,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  -webkit-animation: animate-preloader 1s linear infinite;
-  animation: animate-preloader 1s linear infinite;
+  -webkit-animation: animate-preloader 5s linear infinite;
+  animation: animate-preloader 5s linear infinite;
 }
 
 @-webkit-keyframes animate-preloader {
@@ -309,13 +303,20 @@ h1, h2, h3, h4, h5, h6 {
 # Hero Section
 --------------------------------------------------------------*/
 
+.hero-content{
+  font-size: 20px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 5px;
+  font-family: "Poppins", sans-serif;
+  color:#424549 ;
+}
+
 .hello{
   padding-left: 100px;
   padding-right: 100px;
   padding-bottom: 50px;
 }
-
-
 
 #hero {
   width: 100%;
@@ -350,6 +351,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero p {
+  padding-left: 4px;
+  padding-right: 4px;
   color: #45505b;
   margin: 15px 0 0 0;
   font-size: 26px;
@@ -362,15 +365,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .social-links {
-  margin-top: 20px;
+  margin-top: 25px;
+  margin-left: 3px;
 }
 
 #hero .social-links a {
-  font-size: 24px;
+  font-size: 25px;
   display: inline-block;
   color: #45505b;
   line-height: 1;
-  margin-right: 20px;
+  margin-right:15px;
   transition: 0.3s;
 }
 
@@ -453,10 +457,6 @@ section {
 --------------------------------------------------------------*/
 
 
-.about .about-info{
-border: 2px solid black;
-}
-
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -529,7 +529,7 @@ border: 2px solid black;
 .facts .count-box p {
   padding: 0;
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
 }
 
@@ -1114,7 +1114,7 @@ border: 2px solid black;
   font-size: 20px;
   font-weight: bold;
   margin: 10px 0 5px 0;
-  color: #111;
+  color: #45505b;
 }
 
 .testimonials .testimonial-item h4 {
@@ -1173,6 +1173,11 @@ border: 2px solid black;
 # Contact
 --------------------------------------------------------------*/
 
+.contact-title {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
 .contact-info p{
   font-size: 18px;
 }
@@ -1201,7 +1206,7 @@ border: 2px solid black;
   padding: 0 0 0 60px;
   font-size: 22px;
   font-weight: 600;
-  margin-bottom: 5px;
+  margin: 10px 12px 0px 0px;
   color: #45505b;
 }
 
@@ -1368,12 +1373,14 @@ border: 2px solid black;
 }
 
 #footer .social-links a {
-  font-size: 18px;
+  font-size: 25px;
   display: inline-block;
-  background: #0563bb;
-  color: #fff;
+  /* background: #0563bb; */
+  background-color: #fff;
+  color: #0563bb;
   line-height: 0;
-  padding: 8px 0;
+  padding: 6px 0;
+  /* padding: 8px 0; */
   margin: 0px 4px;
   border-radius: 50%;
   text-align: center;
@@ -1383,8 +1390,8 @@ border: 2px solid black;
 }
 
 #footer .social-links a:hover {
-  background: #fff;
-  color: #0563bb;
+  background: #0563bb;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -1402,10 +1409,10 @@ border: 2px solid black;
 --------------------------------------------------------------*/
 
 .hand {
-  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.5s;        /* Change to speed up or slow down */
-  animation-iteration-count: infinite;  /* Never stop waving :) */
-  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  animation-name: wave-animation;  
+  animation-duration: 2.5s;        
+  animation-iteration-count: infinite; 
+  transform-origin: 70% 70%;       
   display: inline-block;
 }
 
@@ -1424,6 +1431,14 @@ border: 2px solid black;
   0% { transform: translateX(0px); }
  50% { transform: translateX(10px); }
 100% { transform: translateX(0px); }
+}
+
+@keyframes up-down {
+  0% { transform: translatey(0px); }
+ 25% { transform: translatey(-10px); }
+ 50% { transform: translatey(0px); }
+ 75% { transform: translatey(-10px); }
+100% { transform: translatey(0px); }
 }
 
 
