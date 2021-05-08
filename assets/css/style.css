@@ -13,6 +13,55 @@ body {
   color: #272829;
 }
 
+.more{
+  text-align: center;
+  font-size:22px;
+  font-weight: 500;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  line-height: 20px; 
+}
+
+.more:hover{
+  animation-name: vibrate;
+  animation-duration:0.7s;        
+  animation-iteration-count: infinite;  transition: .5s;
+}
+
+.more img{
+  padding-bottom: 3px;
+  padding-left: 2px;
+}
+
+.custom-btn {
+  background: #eef7ff ;
+  font-size: 20px;
+  font-weight: 500;
+  border: 2px solid #0563bb;
+  padding: 7px 15px;
+  color: #0563bb;
+  transition: 0.4s;
+  border-radius: 7px;
+}
+
+.custom-btn:hover, .custom-btn-sm:hover {
+  color: #fff;
+  background: #0563bb;
+}
+
+.custom-btn-sm {
+  background: #eef7ff ;
+  font-weight: 500;
+  margin-bottom: 10px;
+  border: 2px solid #0563bb;
+  padding: 3px 10px;
+  color: #0563bb;
+  transition: 0.4s;
+  border-radius: 7px;
+}
+
+
+
 a {
   color: #0563bb;
   text-decoration: none;
@@ -152,7 +201,6 @@ h1, h2, h3, h4, h5, h6 {
 * Desktop Navigation 
 */
 .nav-menu {
-  padding: 0;
   display: block;
 }
 
@@ -176,7 +224,8 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
   font-size: 15px;
   border-radius: 50px;
-  background: #ffffff;
+  background-color: #fff;
+  /* background: #eef7ff; */
   height: 56px;
   width: 100%;
   overflow: hidden;
@@ -313,7 +362,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .social-links {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 #hero .social-links a {
@@ -368,6 +417,10 @@ section {
   color: #45505b;
 }
 
+.section-title p {
+  font-size: 18px;
+}
+
 .section-title h2::before {
   content: '';
   position: absolute;
@@ -398,6 +451,8 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
+
 .about .about-info{
 border: 2px solid black;
 }
@@ -434,18 +489,6 @@ border: 2px solid black;
 }
 
 
-.resume-btn {
-  background: #0563bb;
-  border: 0;
-  padding: 10px 35px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 50px;
-}
-
-.resume-btn:hover {
-  background: #0678e3;
-}
 
 
 /*--------------------------------------------------------------
@@ -545,7 +588,7 @@ border: 2px solid black;
 }
 
 .resume .resume-item h4 {
-  line-height: 18px;
+  line-height: 22px;
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
@@ -567,38 +610,14 @@ border: 2px solid black;
   font-size: 14px;
   color: #0563bb;
   font-family: "Poppins", sans-serif;
-  margin-bottom: 10px;
 }
 
-.project-link {
-  border: 0;
-  padding: 3px 12px;
-  margin-bottom: 10px;
-  transition: 0.4s;
-  border-radius: 50px;
-  color: #0678e3;
-  background: white;
-  border: 1px solid #0678e3;
-}
-
-.project-link:hover {
-  background: #0563bb;
-  color: #fff;
-
-}
 
 
 .resume .resume-item ul {
   padding-left: 20px;
 }
 
-.resume .resume-item ul li {
-  padding-bottom: 10px;
-}
-
-.resume .resume-item:last-child {
-  padding-bottom: 0;
-}
 
 .resume .resume-item::before {
   content: "";
@@ -617,6 +636,8 @@ border: 2px solid black;
 
 # Devloper Portfolio
 --------------------------------------------------------------*/
+
+
 
 .dev-portfolio .dev-portfolio-item {
   margin: 0px 0px;
@@ -1151,6 +1172,11 @@ border: 2px solid black;
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+
+.contact-info p{
+  font-size: 18px;
+}
+
 .contact .info {
   width: 100%;
   background: #fff;
@@ -1338,17 +1364,17 @@ border: 2px solid black;
 }
 
 #footer .social-links {
-  margin: 0 0 40px 0;
+  margin: 0 0 25px 0;
 }
 
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #fff;
-  color: #0563bb;
-  line-height: 1;
+  background: #0563bb;
+  color: #fff;
+  line-height: 0;
   padding: 8px 0;
-  margin-right: 4px;
+  margin: 0px 4px;
   border-radius: 50%;
   text-align: center;
   width: 36px;
@@ -1357,8 +1383,8 @@ border: 2px solid black;
 }
 
 #footer .social-links a:hover {
-  background: #0678e3;
-  color: #fff;
+  background: #fff;
+  color: #0563bb;
   text-decoration: none;
 }
 
@@ -1394,7 +1420,11 @@ border: 2px solid black;
   100% { transform: rotate( 0.0deg) }
 }
 
-
+@keyframes vibrate {
+  0% { transform: translateX(0px); }
+ 50% { transform: translateX(10px); }
+100% { transform: translateX(0px); }
+}
 
 
 /* For demonstration purposes only: */
