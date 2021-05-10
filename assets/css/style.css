@@ -32,7 +32,7 @@ body {
 }
 
 .custom-btn {
-  background: #eef7ff ;
+  background: #f4faff ;
   font-size: 20px;
   font-weight: 500;
   border: 2px solid #0563bb;
@@ -43,19 +43,26 @@ body {
 }
 
 .custom-btn:hover, .custom-btn-sm:hover {
-  color: #fff;
-  background: #0563bb;
+  color: #0563bb;
+  background: #fff;
 }
 
 .custom-btn-sm {
-  background: #eef7ff ;
+  font-size: 16px;
+  /* background: #f4faff ; */
+  background-color: #0563bb;
   font-weight: 500;
   margin-bottom: 10px;
   border: 2px solid #0563bb;
-  padding: 3px 10px;
-  color: #0563bb;
+  padding: 2px 10px;
+  color: #fff;
   transition: 0.4s;
-  border-radius: 7px;
+  border-radius: 5px;
+}
+
+.custom-btn-sm:visited {
+  color: #fff;
+  background: #0563bb;
 }
 
 
@@ -596,10 +603,12 @@ section {
 .resume .resume-item h5 {
   font-size: 16px;
   background: #f7f8f9;
-  padding: 5px 15px;
+  padding: 6px 15px;
   display: inline-block;
-  font-weight: 600;
+  font-weight: 550;
   margin-bottom: 10px;
+  margin-left: 5px;
+  border-radius: 5px ;
 }
 
 .resume .resume-item h6 {
@@ -607,8 +616,6 @@ section {
   color: #0563bb;
   font-family: "Poppins", sans-serif;
 }
-
-
 
 .resume .resume-item ul {
   padding-left: 20px;
