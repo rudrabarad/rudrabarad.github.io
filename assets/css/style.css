@@ -9,6 +9,14 @@ body {
   color: #343a40;
 }
 
+.bg-img{
+  margin-top: 60px;
+  right: 0;
+  top: 0;
+  float: right;
+  height: 600px;
+}
+
 .more{
   float: right;
   font-size:22px;
@@ -318,6 +326,8 @@ h1, h2, h3, h4, h5, h6 {
 # Hero Section
 --------------------------------------------------------------*/
 
+
+
 .hero-content{
   font-size: 20px;
   padding-left: 4px;
@@ -336,14 +346,21 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  /* background: url("../img/hero-bg.jpg") top right no-repeat; */
+  background: url("../img/hero-bg.JPG") top right no-repeat;
   background-size: cover;
   position: relative;
 }
 
+
 @media (min-width: 992px) {
   #hero {
     padding-left: 160px;
+  }
+}
+
+@media only screen and ( max-width: 640px ) {
+  .hero { 
+    background-image: none !important;
   }
 }
 
