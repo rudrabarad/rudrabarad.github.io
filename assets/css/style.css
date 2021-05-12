@@ -346,7 +346,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.JPG") top right no-repeat;
+  /* background: url("../img/hero-bg.JPG") top right no-repeat; */
   background-size: cover;
   position: relative;
 }
@@ -487,6 +487,7 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
 .about{
   color:#343a40;
   font-family: "Poppins", sans-serif;
@@ -497,58 +498,37 @@ section {
 }
 
 .about .semi-bold{
-  font-weight: 550;
+  font-weight: 500;
+  color: #2979de;
+
 }
 
 .about .content h3 {
   font-weight: 600;
   font-size: 26px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   color: #343a40;
 }
 
 .about .content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.about .content ul li {
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-}
-
-.about .content ul strong {
-  margin-right: 10px;
-}
-
-.about .content ul i {
-  font-size: 16px;
-  margin-right: 5px;
-  color: #2979de;
-  line-height: 0;
+  padding-top: 10px;
+  padding-left: 20px;
 }
 
 .about .content p:last-child {
   margin-bottom: 0;
 }
 
-
-
-
 /*--------------------------------------------------------------
-# facts-stats
+# stats
 --------------------------------------------------------------*/
 
-.facts-content p{
-  margin: 18px 0px;
-}
 
-.facts-stats ul li{
+.stats ul li{
   font-family: "Poppins", sans-serif;
 }
 
-.facts-stats .count-box {
+.stats .count-box {
   padding: 30px 30px 25px 30px;
   margin-top: 30px;
   width: 100%;
@@ -557,7 +537,7 @@ section {
   background: #fff;
 }
 
-.facts-stats .count-box i {
+.stats .count-box i {
   position: absolute;
   top: -25px;
   left: 50%;
@@ -573,14 +553,14 @@ section {
   height: 48px;
 }
 
-.facts-stats .count-box span {
+.stats .count-box span {
   font-size: 36px;
   display: block;
   font-weight: 600;
   color: #011426;
 }
 
-.facts-stats .count-box p {
+.stats .count-box p {
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -1003,6 +983,7 @@ section {
 
 .testimonials .testimonial-item .testimonial-img {
   width: 120px;
+  height: 120px;
   border-radius: 50%;
   border: 4px solid #fff;
   margin: 0 auto;
