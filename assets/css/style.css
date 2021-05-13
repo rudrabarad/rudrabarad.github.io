@@ -9,13 +9,7 @@ body {
   color: #343a40;
 }
 
-.bg-img{
-  margin-top: 60px;
-  right: 0;
-  top: 0;
-  float: right;
-  height: 600px;
-}
+
 
 .more{
   float: right;
@@ -326,7 +320,10 @@ h1, h2, h3, h4, h5, h6 {
 # Hero Section
 --------------------------------------------------------------*/
 
-
+.hero{
+  padding-top: 200px;
+  margin-bottom: 150px;
+}
 
 .hero-content{
   font-size: 18px;
@@ -337,15 +334,8 @@ h1, h2, h3, h4, h5, h6 {
   color:#343a40 ;
 }
 
-.hello{
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-bottom: 50px;
-}
-
 #hero {
   width: 100%;
-  height: 100vh;
   /* background: url("../img/hero-bg.JPG") top right no-repeat; */
   background-size: cover;
   position: relative;
@@ -1296,6 +1286,12 @@ section {
   display: inline-block;
 }
 
+.hero-gif {
+  animation-name: hero-float;  
+  animation-duration: 4s;        
+  animation-iteration-count: infinite; 
+}
+
 @keyframes wave-animation {
     0% { transform: rotate( 0.0deg) }
    10% { transform: rotate( 2.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
@@ -1328,6 +1324,19 @@ section {
  75% { transform: translatey(-10px); }
 100% { transform: translatey(0px); }
 }
+
+@keyframes hero-float {
+  0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
 
 
 /* For demonstration purposes only: */
