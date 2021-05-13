@@ -192,10 +192,11 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 992px) {
   #header {
-    width: 300px;
+    width: 100%;
     background: #fff;
-    border-right: 1px solid #e6e9ec;
-    left: -300px;
+    border-right: 1px solid white;
+    left: -100%;
+    align-items: center;
   }
 }
 
@@ -320,10 +321,6 @@ h1, h2, h3, h4, h5, h6 {
 # Hero Section
 --------------------------------------------------------------*/
 
-.hero{
-  padding-top: 200px;
-  /* margin-bottom: 170px; */
-}
 
 .hero-content{
   font-size: 18px;
@@ -357,8 +354,10 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (max-width:1024px){
   .hero-gif{
-    visibility:hidden;
-    /* background-image: none; */
+    display: none;
+  }
+  #hero{
+    margin-top: 0;
   }
 }
 
@@ -373,6 +372,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero h1 {
+  padding-top: 80px;
   margin: 0;
   font-size: 64px;
   font-weight: 700;
@@ -1295,7 +1295,9 @@ section {
 }
 
 .hero-gif {
-  padding-top: 120px;
+  float:right;
+  width: 50%; 
+  padding: 0px 50px;
   animation-name: hero-float;  
   animation-duration: 4s;        
   animation-iteration-count: infinite; 
@@ -1339,7 +1341,7 @@ section {
 		transform: translatey(0px);
 	}
 	50% {
-		transform: translatey(-20px);
+		transform: translatey(20px);
 	}
 	100% {
 		transform: translatey(0px);
