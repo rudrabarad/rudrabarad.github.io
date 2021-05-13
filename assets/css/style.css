@@ -1298,6 +1298,7 @@ section {
   float:right;
   width: 50%; 
   padding: 0px 50px;
+  padding-top: 15px;
   animation-name: hero-float;  
   animation-duration: 4s;        
   animation-iteration-count: infinite; 
