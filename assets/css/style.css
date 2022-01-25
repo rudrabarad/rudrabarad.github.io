@@ -9,7 +9,22 @@ body {
   color: #343a40;
 }
 
+/* scroll bar start */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+	background-color: #F5F5F5;
+}
 
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+ border-radius: 10px;
+  background: #2979de; 
+}
+
+
+/* scroll bar end */
 
 .more{
   float: right;
@@ -41,18 +56,18 @@ body {
 }
 
 .custom-btn {
-  background: #2979de ;
+  background-color: #fff;
   font-size: 18px;
   border: 2px solid #2979de;
   padding: 7px 15px;
-  color: #fff;
+  color: #343a40;
   transition: 0.4s;
   border-radius: 5px;
 }
 
 .custom-btn:hover{
-  background-color: #fff;
-  color: #343a40;
+  color: #fff;
+  background: #2979de;
 }
 
 
@@ -214,6 +229,8 @@ h1, h2, h3, h4, h5, h6 {
 */
 .nav-menu {
   display: block;
+  font-family: "Poppins", sans-serif;
+
 }
 
 .nav-menu * {
@@ -378,6 +395,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 56px;
   color: #343a40;
+  font-family: "Poppins", sans-serif;
+
 }
 
 #hero p {
@@ -439,12 +458,13 @@ section {
 .section-title {
   text-align: center;
   padding-bottom: 30px;
+  font-family: "Poppins", sans-serif;
+
 }
 
 .section-title h2 {
   font-size: 32px;
   font-weight: bold;
-  text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
@@ -506,6 +526,11 @@ section {
   font-size: 26px;
   margin-bottom: 15px;
   color: #343a40;
+}
+
+.about .content a{
+  text-decoration: none;
+  color: #2979de;
 }
 
 .about .content ul {
@@ -571,10 +596,12 @@ section {
 --------------------------------------------------------------*/
 .resume .resume-title {
   font-size: 26px;
-  font-weight: 700;
+  font-weight: 600;
   margin-top: 20px;
   margin-bottom: 20px;
   color: #343a40;
+  font-family: "Poppins", sans-serif;
+
 }
 
 .resume .resume-item {
@@ -582,12 +609,19 @@ section {
   margin-top: -2px;
   border-left: 2px solid #2979de;
   position: relative;
+  font-family: "Poppins", sans-serif;
+
+}
+
+.resume .resume-item p{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 .resume .resume-item h4 {
   line-height: 22px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   font-family: "Poppins", sans-serif;
   color: #2979de;
   margin-bottom: 10px;
@@ -637,6 +671,8 @@ section {
 
 .dev-portfolio .dev-portfolio-item {
   margin: 0px 0px;
+  font-family: "Poppins", sans-serif;
+
 }
 
 .dev-portfolio #dev-portfolio-flters {
@@ -647,6 +683,8 @@ section {
   background: #fff;
   border-radius: 50px;
   padding: 2px 15px;
+  font-family: "Poppins", sans-serif;
+
 }
 
 .dev-portfolio #dev-portfolio-flters li {
@@ -742,6 +780,8 @@ section {
 
 .des-portfolio .des-portfolio-item {
   margin-bottom: 30px;
+  font-family: "Poppins", sans-serif;
+
 }
 
 .des-portfolio #des-portfolio-flters {
@@ -752,6 +792,8 @@ section {
   background: #fff;
   border-radius: 50px;
   padding: 2px 15px;
+  font-family: "Poppins", sans-serif;
+
 }
 
 .des-portfolio #des-portfolio-flters li {
@@ -969,10 +1011,14 @@ section {
 --------------------------------------------------------------*/
 .testimonials .section-header {
   margin-bottom: 40px;
+  font-family: "Poppins", sans-serif;
+
 }
 
 .testimonials .testimonial-item {
   text-align: center;
+  font-family: "Poppins", sans-serif;
+
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -1051,43 +1097,20 @@ section {
   padding-bottom: 10px;
 }
 
-.contact-info p{
+
+.contact-content{
   font-size: 18px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
-.contact .info {
-  width: 100%;
-  background: #fff;
-  align-items: center;
-}
 
-.contact .info i {
-  font-size: 20px;
-  color: #2979de;
-  float: left;
-  width: 44px;
-  height: 44px;
-  background: #eef7ff;
+.get-in-touch{
   display: flex;
   justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
-}
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
 
-.contact .info h4 {
-  padding: 0 0 0 60px;
-  font-size: 22px;
-  font-weight: 600;
-  margin: 10px 12px 0px 0px;
-  color: #343a40;
-}
-
-.contact .info p {
-  padding: 0 0 0 60px;
-  margin-bottom: 0;
-  font-size: 14px;
-  color: #728394;
 }
 
 .contact-btn {
@@ -1269,26 +1292,25 @@ section {
 
 }
 
-#footer .copyright {
-  margin: 0 0 5px 0;
+#footer .copyright-1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
 }
 
-#footer .credits {
-  font-size: 13px;
+#footer .copyright-2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+#footer .copyright-2 a{
+  text-decoration: none;
+  color: #2979de;
 }
 
 
 /*--------------------------------------------------------------
 # Animation
 --------------------------------------------------------------*/
-
-.hand {
-  animation-name: wave-animation;  
-  animation-duration: 2.5s;        
-  animation-iteration-count: infinite; 
-  transform-origin: 70% 70%;       
-  display: inline-block;
-}
 
 .hero-gif {
   float:right;
