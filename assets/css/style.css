@@ -588,7 +588,6 @@ section {
   line-height: 22px;
   font-size: 18px;
   font-weight: 600;
-  text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   color: #2979de;
   margin-bottom: 10px;
@@ -782,8 +781,8 @@ section {
   overflow: hidden;
   z-index: 1;
   background: rgba(255, 255, 255, 1);
-  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
-  border-radius: 5px;
+  /* box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08); */
+  border-radius: 15px;
 }
 
 
