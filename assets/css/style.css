@@ -721,7 +721,7 @@ section {
 
 .resume .resume-item h6 {
   font-size: 14px;
-  color: #999999;
+  color: #2979de;
   font-family: "Poppins", sans-serif;
   padding-top: 5px;
 }
@@ -729,6 +729,7 @@ section {
 .resume .resume-item ul {
   padding-left: 20px;
   font-size: 15px;
+  color: #555555;
 }
 
 
