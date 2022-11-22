@@ -77,7 +77,7 @@ body {
 }
 
 .custom-btn-sm {
-  font-size: 16px;
+  font-size: 14px;
   /* background: #f4faff ; */
   background-color: #fff;
   font-weight: 500;
@@ -634,11 +634,11 @@ section {
 # Resume
 --------------------------------------------------------------*/
 .resume .resume-title {
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 600;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #343a40;
+  color: #2979de;
   font-family: "Poppins", sans-serif;
 
 }
@@ -690,39 +690,45 @@ section {
   width:100%;
 }
 
-.resume .resume-item p{
-  font-family: "Poppins", sans-serif;
+.resume .resume-item .resume-item-title {
+  font-size: 18px;
   font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #343a40;
 }
 
-.resume .resume-item h4 {
-  line-height: 22px;
-  font-size: 18px;
-  font-weight: 500;
-  font-family: "Poppins", sans-serif;
+.resume .resume-item .resume-item-title a{
   color: #2979de;
-  margin-bottom: 10px;
+}
+
+.resume .resume-item .resume-item-subtitle{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
 }
 
 .resume .resume-item h5 {
-  font-size: 16px;
+  font-size: 14px;
   background: #f7f8f9;
-  padding: 6px 15px;
+  padding: 6px 10px;
   display: inline-block;
   font-weight: 500;
   margin-bottom: 10px;
-  margin-left: 5px;
+  margin-right: 5px;
   border-radius: 5px ;
+  color: #555555;
+  align-items: right;
 }
 
 .resume .resume-item h6 {
   font-size: 14px;
-  color: #2979de;
+  color: #999999;
   font-family: "Poppins", sans-serif;
+  padding-top: 5px;
 }
 
 .resume .resume-item ul {
   padding-left: 20px;
+  font-size: 15px;
 }
 
 
