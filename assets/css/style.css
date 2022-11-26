@@ -384,6 +384,9 @@ transition: all 0.3s ease-in-out;
   width:100%;
 }
 
+
+
+
 @media screen and (max-width: 1200px){ 
   .navigation-links {
     display: none;
@@ -473,7 +476,7 @@ transition: all 0.3s ease-in-out;
   text-align: center;
 }
 
-#hero .content, #testimonials .content, #dev-portfolio .content{
+.sub-heading{
   margin: 0;
   font-size: 18px;
   font-weight: 300;
@@ -482,10 +485,13 @@ transition: all 0.3s ease-in-out;
   text-align: center;
 }
 
-#hero .highlight, #testimonials .highlight, #dev-portfolio .highlight{
+.highlight{
   font-weight: 400;
   color: #343a40;
-  
+}
+
+.highlight:hover{
+  color: #343a40;
 }
 
 #hero .contact-links {
@@ -552,7 +558,7 @@ transition: all 0.3s ease-in-out;
     line-height: 1.1;
     margin-bottom: 20px;
   }
-  #hero .content {
+  #hero .sub-heading {
     padding: 0 20px;
     font-size: 16px;
   }
@@ -1405,46 +1411,67 @@ section {
 # Contact
 --------------------------------------------------------------*/
 
-.contact-title {
-  text-align: center;
-  padding-bottom: 10px;
+.contact{
+  margin: 150px 0;
 }
 
-
-.contact-content{
-  font-size: 18px;
+.contact-title{
   text-align: center;
-  font-family: "Poppins", sans-serif;
 }
 
-
-.get-in-touch{
-  display: flex;
-  justify-content: center;
+#contact .contact-links {
+  font-size: 14px;
   margin-top: 20px;
+  margin-left: 4px;
   font-family: "Poppins", sans-serif;
-
+  font-weight: 500;
+  text-align: center;
 }
 
-.contact-btn {
-    font-size: 20px;
-    font-weight: 500;
-    color: #2979de;
-    background: #eef7ff;
-    display: flex;
-    margin-top: 50px 0px ;
-    padding: 8px 20px;
-    justify-content: center;
-    align-items: center;
-    border:3px solid #2979de;
-    border-radius: 7px;
-    transition: all 0.3s ease-in-out;
+/* #hero .contact-links a {
+  line-height: 1.5;
+} */
+
+#contact .contact-links a {
+  background-image: linear-gradient(
+    to right,
+    #343a40,
+    #343a40 50%,
+    #2979de 50%
+  );
+  margin-right:15px;
+  background-size: 200% 100%;
+  background-position: 100%;
+  display: inline-block;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
 }
 
-.contact-btn:hover {
+#contact .contact-links a:before {
+  content: '';
   background: #2979de;
-  color: #fff;
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
 }
+
+#contact .contact-links a:hover {
+ background-position: 0;
+ border-bottom: 0;
+
+}
+
+#contact .contact-links a:hover::before {
+  width:100%;
+}
+
+
 
 .contact .info .email, .contact .info .phone {
   margin-top: 20px;
@@ -1559,6 +1586,7 @@ section {
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
+  margin-top: 200px;
 }
 
 #footer h3 {
