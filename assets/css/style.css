@@ -591,7 +591,7 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 30px;
+  padding: 30px 0;
   font-family: "Poppins", sans-serif;
 
 }
@@ -1005,7 +1005,8 @@ section {
   transform: scale(1.05);
 }
 
-#dev-portfolio .view-more{
+.view-more{
+  font-family: "Poppins", sans-serif;
   background-image: linear-gradient(
     to right,
     #343a40,
