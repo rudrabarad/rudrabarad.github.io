@@ -25,6 +25,9 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -43,6 +46,10 @@
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
+  <!-- Boxicons -->
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CCC3SLY8HR"></script>
   <script>
@@ -56,6 +63,22 @@
 </head>
 
 <body>
+
+    <!-- ======= Horizontal Desktop Navigation ======= -->
+    <nav class="navigation">
+      <div class="container">
+        <div class="brand">
+          <a href="#">rudra</a>
+        </div>
+        <div class="navigation-links">
+          <a href="#contact">Contact</a>
+          <a href="#">Playground</a>
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+        </div>
+      </div>
+    </nav>
+    <!-- ======= Horizontal Desktop Navigation END ======= -->
   
   <!-- ======= Mobile nav toggle button ======= -->
   <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
@@ -76,8 +99,6 @@
 
   </header><!-- End Header -->
 
-  
-
  
   <main id="main">
 
@@ -88,10 +109,21 @@
           <img src="assets/img/hero-img.png" class="img-fluid">
         </div> -->
   
-        <div class="title">Hello, I'm <span style="color:#2979de;">Rudra</span>!</div><br>
-        <div class="sub-title">I’m a User Experience Designer with an inquisitive mind<span style="color:#2979de;">.</span></div><br>
-        <div class="content">Currently pursuing a <span class="highlight">master's degree</span> at @<span class="highlight">UT Austin<a class="external-link" href="https://www.utexas.edu/" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a></span></div>
-        <div class="content">Previously interned at @<span class="highlight">Aavatto</span><a class="external-link" href="https://aavatto.com/" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a></div>
+        <div class="row">
+            <div class="col">
+              
+            </div>
+            <div class="col-lg-6 col-sm-10">
+              <div class="title">Hello, I'm <span style="color:#2979de;">Rudra</span></div><br>
+              <div class="sub-title">I’m a User Experience Designer with an inquisitive mind<span style="color:#2979de;">.</span></div>
+              <div class="content">Currently pursuing a <span class="highlight">master's degree</span> at @<span class="highlight">UT Austin<a class="external-link" href="https://www.utexas.edu/" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a></span></div>
+              <div class="content">Previously interned at @<span class="highlight">Aavatto</span><a class="external-link" href="https://aavatto.com/" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a></div>      
+            </div>
+            <div class="col">
+            
+            </div>
+          </div>
+
         
         <!-- <p>I'm <b><span class="typed" data-typed-items="User Experience Designer, Curious Explorer"></span></b></p> -->
         <!-- <div class="hero-content">Welcome to my Portfolio Website</div> -->
@@ -103,12 +135,43 @@
       </div>
     </section><!-- End Hero -->
 
+    <!-- ======= Work Section START ======= -->
+
+    <section id="work" class="work pl-3 pr-3 pb-3">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Selected Work</h2>
+        </div>
+
+        <div class="work-project row pt-2" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-7 col-sm-12 pb-4">
+            <img class="capmetro-img" src="/assets/img/Work/CapMetro.svg" width="100%">
+          </div>
+          <div class="col-lg-1"></div>
+          <div class="col-lg-4 work-content" data-aos="fade-up" data-aos-delay="100">
+            <div class="work-title">CapMetro 2.0</div>
+            <div style="color:#b7b7b7; font-weight: 400; padding-bottom: 5px;">Academic Project - UT Austin MSIS</div>
+            <div class="work-body">
+              Revamped the interactive system of the CapMetro, a public transportation provider located in Austin, Texas.
+              <br><br>
+              <h5>User Interviews</h5><h5>WAAD</h5><h5>User Persona</h5><h5>Sketching</h5><h5>Wireframing</h5><h5>Prototyping</h5> 
+              <br><br>
+              <a href="https://www.figma.com/proto/pFqJeg6oNkWNHeIEN3HAV3/CapMetro-2.0?page-id=0%3A1&node-id=1%3A218&viewport=673%2C179%2C0.02&scaling=min-zoom&starting-point-node-id=1%3A218" target="_blank">Read More</a>→
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- ======= Work Section END ======= -->
+
+
     <!-- ======= Design Portfolio Section ======= -->
     <section id="des-portfolio" class="des-portfolio section-bg pl-3 pr-3 pb-3">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Design Projects</h2>
+          <h2>Playground</h2>
           <p>Various creative stuffs that I've designed. It includes Logo, Website UI, App UI, etc</p>
         </div>
 
@@ -726,7 +789,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Testimonials</h2>
+          <h2>Recommendations</h2>
         </div>
 
         <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
